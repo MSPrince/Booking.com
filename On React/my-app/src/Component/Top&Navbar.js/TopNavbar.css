@@ -1,0 +1,117 @@
+/* ------------------------------------------topbar & navbar */
+.language, .currency {
+    background-color: rgba(9, 183, 231, 0.726); /* Background color with opacity */
+    backdrop-filter: blur(10px); /* Background blur */
+    border-radius: 5px;
+    padding: 2px 5px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow */
+    color: yellow;
+    font-size: 15px;
+}
+
+.language img {
+    z-index: 6756;
+}
+
+.superNav i {
+    color: #FFD43B;
+    font-size: 15px;
+    animation: drop 1s ease forwards;
+    animation-delay: 5s;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.mobNo, .mail {
+    color: white;
+}
+
+.superNav {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 540px) {
+    .centerOnMobile {
+        text-align: center
+    }
+}
+
+.navbar .megamenu {
+    padding: 1rem;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .navbar .has-megamenu {
+        position: static!important;
+    }
+
+    .navbar .megamenu {
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* ============ mobile view ============ */
+@media (max-width: 991px) {
+    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse {
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top: 10px;
+    }
+}
+
+/* --------------------------------------------------------logo animation */
+.css-text-mask {
+    font-size: 25px;
+    font-family: Arial Black, Gadget, sans-serif;
+    font-weight: bold;
+    animation: animatedBackground 10s linear infinite normal;
+    -webkit-text-stroke-width: .5px;
+    background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: #0000;
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 500px 0;
+    }
+}
+
+
+.nav-link {
+    color: white
+}
+
+.login1 {
+    border: .1px solid rgb(231, 228, 228);
+    margin-right: 5px;
+    padding: 2px 20px; /* Adjusted padding */
+    background-color: rgba(255, 255, 255, 0.2); /* Background color with opacity */
+    backdrop-filter: blur(10px); /* Background blur */
+    border-radius: 5px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow */
+    color: white;
+}
+
+@media screen and (max-width: 996px) {
+    .lo {
+        width: 80px;
+        text-align: center;
+    }
+}

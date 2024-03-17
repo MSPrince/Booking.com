@@ -1,0 +1,302 @@
+/* --------------------------------------------Some common css --------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #f4f4f4; /* Set a background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+ul,li {
+    list-style-type: none;
+    /* list-style-type: disc; Unordered list with bullet points */
+    /* list-style-position: outside; Marker outside the list item box */
+    /* list-style-image: url('bullet.png'); Custom bullet image */
+    /* list-style: square inside url('bullet.png'); Square bullets inside the list item box with a custom image */
+    /* display: inline-block; Displays list items inline with block layout */
+}
+
+ol {
+    /* list-style-type: decimal; Ordered list with numbers */
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*-------------------------------------------- common media query------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for screens between 768px and 1024px wide */
+}
+
+@media screen and (orientation: landscape) {
+    /* Styles for landscape orientation */
+}
+
+@media screen and (orientation: portrait) {
+    /* Styles for portrait orientation */
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Styles for high-resolution displays (Retina) */
+}
+
+@media print {
+    /* Styles for printing */
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    /* Styles for dark mode */
+}
+
+@media screen and (aspect-ratio: 16/9) {
+    /* Styles for screens with a 16:9 aspect ratio */
+}
+
+@media (hover: hover) and (pointer: fine) {
+    /* Styles for devices that support hover and have a fine pointer */
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles for specific devices like iPhone 5/SE */
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------topbar & navbar */
+.language, .currency{
+    background-color: rgba(9, 183, 231, 0.726); /* Background color with opacity */
+    backdrop-filter: blur(10px); /* Background blur */
+    border-radius: 5px;
+    padding: 2px 5px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow */
+    color: yellow;
+    font-size: 15px;
+}
+
+.language img{
+    z-index: 6756;
+}
+
+.superNav i{
+    color: #FFD43B;
+    font-size: 15px;
+    animation: drop 1s ease forwards ;
+    animation-delay: 5s;
+}
+@keyframes drop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+.mobNo , .mail{
+    color: white;
+}
+.superNav {
+    font-size: 13px;
+    /* background-color: rgb(13, 10, 253); */
+}
+
+@media screen and (max-width:540px) {
+    .centerOnMobile {
+         text-align: center
+    }
+}
+.navbar .megamenu{ padding: 1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+/* ============ mobile view .end// ============ */
+
+/* --------------------------------------------------------logo animation */
+.css-text-mask {
+	font-size: 25px;
+	font-family: Arial Black, Gadget, sans-serif;
+	font-weight: bold;
+	background-image: url('https://img.freepik.com/premium-photo/abstract-bokeh-background_996449-1641.jpg?w=900');
+	background-position: 0px 0px;
+	-webkit-animation: animatedBackground 10s linear infinite normal;
+	-webkit-text-stroke-width: .5px;
+	/* -webkit-text-stroke-color: #2907e6; */
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #0000;
+}
+
+@-webkit-keyframes animatedBackground {
+	0% { background-position: 0 0 }
+	100% { background-position: 500px 0 }
+}
+
+.nav-link{
+    color:white
+}
+
+.login1{
+    border: .1px solid rgb(231, 228, 228);
+    margin-right: 5px;
+    padding: 3px 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Background color with opacity */
+    backdrop-filter: blur(10px); /* Background blur */
+    border-radius: 5px;
+    padding: 2px 5px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow */
+    color: white;
+}
+
+@media screen and (max-width: 996px) {
+    .lo{
+         width: 80px;
+         text-align: center;
+    }    /* Styles for screens up to 768px wide */
+}
+
+
+/* banner-------------- */
+.banner{
+    border: 1px solid #3B71CA;
+    padding-top: 40px;
+}
+
+.banner h1{
+    font-weight: 900;
+    font-size: 50px;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: yellow;
+    -webkit-text-fill-color: #ffffff;
+    background-color: transparent;
+    /* font-family: Impact, Charcoal, sans-serif; */
+}
+
+.banner p{
+    color: white;
+    font-size: 23px;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr .3fr; /* Defines the columns and their sizes */
+    grid-template-rows: auto; /* Defines the rows and their sizes */
+    gap: 0px;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.search input[type="text"],
+.search input[type="date"] {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding: 12px 40px;
+    margin-right: 10px; /* Add some space between inputs */
+}
+
+.search input[type="text"]{
+    background: url('../asset/search-container/double-bed.png') no-repeat 10px center; /* Set background image */
+        background-size: 25px;
+        background-color: white;
+        /* padding-left:40px ; */
+}
+
+.search input[type="date"]{
+    background: url('../asset/search-container/schedule.png') no-repeat 10px center; /* Set background image */
+        background-size: 25px;
+        background-color: white;
+        /* padding-left:40px ; */
+}
+.search .dropp{
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white !important;
+    background-position: 10px 10px; 
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding: 12px 20px;
+    margin-right: 10px; 
+    background: url('../asset/search-container/user.png') no-repeat 10px center; /* Set background image */
+    background-size: 25px;
+    /* color: black; */
+}
+.dropp li a{
+    z-index: 45647;
+    color: black;
+}
+button[type="submit"] {
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+    .search {
+        grid-template-columns: 1fr; /* Display inputs in a single column */
+        grid-template-rows: auto auto auto; /* Adjust row sizes */
+    }
+
+    .search input[type="text"],
+    .search input[type="date"] {
+        width: 100%;
+        margin-bottom: 10px; /* Add space between inputs */
+    }
+}
