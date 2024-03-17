@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Room Selection</title>
+<style>
+  #container {
+    display: none; /* Hide the container by default */
+    width: 190px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  input[type="number"] {
+    width: 50px;
+    text-align: center;
+  }
+
+  input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+    <input type="text" id="result" readonly>
+<div id="container">
+  <div>
+    <label for="adult">Adult:</label>
+    <input type="number" id="adult" value="0" readonly>
+    <button onclick="decrement('adult')">-</button>
+    <button onclick="increment('adult')">+</button>
+  </div>
+  <div>
+    <label for="children">Children:</label>
+    <input type="number" id="children" value="0" readonly>
+    <button onclick="decrement('children')">-</button>
+    <button onclick="increment('children')">+</button>
+  </div>
+  <div>
+    <label for="rooms">Rooms:</label>
+    <input type="number" id="rooms" value="0" readonly>
+    <button onclick="decrement('rooms')">-</button>
+    <button onclick="increment('rooms')">+</button>
+  </div>
+</div>
+
+<script>
+  // Function to show the container when the input is focused
+  document.getElementById('result').addEventListener('focus', function() {
+    document.getElementById('container').style.display = 'flex';
+  });
+
+  // Function to hide the container when clicking anywhere on the window
+  window.addEventListener('click', function(event) {
+    if (!event.target.closest('#container') && !event.target.matches('#result')) {
+      document.getElementById('container').style.display = 'none';
+    }
+  });
+
+  function increment(type) {
+    const input = document.getElementById(type);
+    input.value = parseInt(input.value) + 1;
+    updateResult();
+  }
+
+  function decrement(type) {
+    const input = document.getElementById(type);
+    if (parseInt(input.value) > 0) {
+      input.value = parseInt(input.value) - 1;
+      updateResult();
+    }
+  }
+
+  function updateResult() {
+    const adult = parseInt(document.getElementById('adult').value);
+    const children = parseInt(document.getElementById('children').value);
+    const rooms = parseInt(document.getElementById('rooms').value);
+    document.getElementById('result').value = `Adult: ${adult}, Children: ${children}, Rooms: ${rooms}`;
+  }
+</script>
+</body>
+</html>

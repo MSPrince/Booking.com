@@ -1,4 +1,12 @@
-
+// date picker
+$(document).ready(function() {
+    $('#dateRangePicker').daterangepicker({
+      "opens": "left",
+      "locale": {
+        "format": "YYYY-MM-DD"
+      }
+    });
+  });
 
 
 
