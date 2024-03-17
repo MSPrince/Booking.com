@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Room Selection</title>
 <style>
-  #container {
-    display: none; /* Hide the container by default */
+  #choose-container {
+    display: none; /* Hide the choose-container by default */
     width: 190px;
     flex-direction: column;
     align-items: center;
@@ -17,19 +17,19 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
-  input[type="number"] {
+ .choose-person input[type="number"] {
     width: 50px;
     text-align: center;
   }
 
-  input[type="text"] {
+ .choose-person input[type="text"] {
     width: 200px;
     padding: 5px;
     margin-top: 10px;
     text-align: center;
   }
 
-  button {
+ .choose-person button {
     padding: 5px 10px;
     border: none;
     background-color: #007bff;
@@ -38,14 +38,14 @@
     border-radius: 3px;
   }
 
-  button:hover {
+  .choose-person button:hover {
     background-color: #0056b3;
   }
 </style>
 </head>
 <body>
     <input type="text" id="result" readonly>
-<div id="container">
+<div id="choose-container" class="choose-person">
   <div>
     <label for="adult">Adult:</label>
     <input type="number" id="adult" value="0" readonly>
@@ -67,15 +67,15 @@
 </div>
 
 <script>
-  // Function to show the container when the input is focused
+  // Function to show the choose-container when the input is focused
   document.getElementById('result').addEventListener('focus', function() {
-    document.getElementById('container').style.display = 'flex';
+    document.getElementById('choose-container').style.display = 'flex';
   });
 
-  // Function to hide the container when clicking anywhere on the window
+  // Function to hide the choose-container when clicking anywhere on the window
   window.addEventListener('click', function(event) {
-    if (!event.target.closest('#container') && !event.target.matches('#result')) {
-      document.getElementById('container').style.display = 'none';
+    if (!event.target.closest('#choose-container') && !event.target.matches('#result')) {
+      document.getElementById('choose-container').style.display = 'none';
     }
   });
 
