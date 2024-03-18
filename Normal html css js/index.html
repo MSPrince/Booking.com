@@ -19,20 +19,22 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Custom Css File -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/trendingDestination.css">
   <!-- date picker css link -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 </head>
 
 <body>
-<div class="center-body loader">
-<div class="loader-circle-11">
-  <div class="arc"></div>
-  <div class="arc"></div>
-  <div class="arc"></div>
-</div>
-</div>
-  <div class="ms hidden"> 
+  <!-- <div class="center-body loader">
+    <div class="loader-circle-11">
+      <div class="arc"></div>
+      <div class="arc"></div>
+      <div class="arc"></div>
+    </div>
+  </div>
+  <div class="ms hidden"> -->
   <!------------------------------------------------------ topbar------------------------------------------------- -->
   <div class="superNav border-bottom py-2 bg-primary">
     <div class="container-fluid">
@@ -125,7 +127,7 @@
   </nav>
 
 
-  <!-- ---------------------------------search Container------------------------------------------------------------------------------- -->
+  <!-- ---------------------------------search Container-------------------------------------------- -->
   <div class="container-fluid bg-primary banner">
     <div class="container">
       <h1>
@@ -136,11 +138,11 @@
 
     <div class=" container">
       <!-- search function -->
-      <div class="search pn">  
-          <input type="text" name="" id="" placeholder="Where are you going">
-          <input type="text" name=""  id="dateRangePicker">
-          <input type="text" id="result" readonly>
-          <button type="submit">Search</button>
+      <div class="search pn">
+        <input type="text" name="" id="" placeholder="Where are you going">
+        <input type="text" name="" id="dateRangePicker">
+        <input type="text" id="result" readonly>
+        <button type="submit">Search</button>
       </div>
       <div id="choose-container" class="choose-person">
         <div>
@@ -162,98 +164,252 @@
           <button onclick="increment('rooms')">+</button>
         </div>
       </div>
-  </div>
+    </div>
   </div>
 
   <!-- looking for flight -->
 
   <!-- offer corosoul -->
+
   <!-- Browse by property type -->
-<!-- Trending destinations grid -->
-<!-- Explore India corosoul -->
-<!-- Quick and easy trip planner multitab corosul -->
-<!-- Get inspiration for your next trip blog -->
-<!-- Stay at our top unique properties section -->
-<!-- Homes guests love corosul -->
-<!-- Get instant discounts section -->
-<!-- Destinations we love section multi tab -->
-<!-- suscribe Email -->
-<!-- footer -->
-<footer class="new_footer_area bg_color">
-  <div class="new_footer_top">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-3 col-md-6">
-                  <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                      <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                      <p>Don’t miss any updates of our new templates and extensions.!</p>
-                      <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
-                          <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                          <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
-                          <p class="mchimp-errmessage" style="display: none;"></p>
-                          <p class="mchimp-sucmessage" style="display: none;"></p>
-                      </form>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                      <h3 class="f-title f_600 t_color f_size_18">Download</h3>
-                      <ul class="list-unstyled f_list">
-                          <li><a href="#">Company</a></li>
-                          <li><a href="#">Android App</a></li>
-                          <li><a href="#">ios App</a></li>
-                          <li><a href="#">Desktop</a></li>
-                          <li><a href="#">Projects</a></li>
-                          <li><a href="#">My tasks</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                      <h3 class="f-title f_600 t_color f_size_18">Help</h3>
-                      <ul class="list-unstyled f_list">
-                          <li><a href="#">FAQ</a></li>
-                          <li><a href="#">Term &amp; conditions</a></li>
-                          <li><a href="#">Reporting</a></li>
-                          <li><a href="#">Documentation</a></li>
-                          <li><a href="#">Support Policy</a></li>
-                          <li><a href="#">Privacy</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                  <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                      <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
-                      <div class="f_social_icon">
-                          <a href="#" class="fab fa-facebook"></a>
-                          <a href="#" class="fab fa-twitter"></a>
-                          <a href="#" class="fab fa-linkedin"></a>
-                          <a href="#" class="fab fa-pinterest"></a>
-                      </div>
-                  </div>
-              </div>
+
+  <!------------------------------ Trending destinations grid ------------------------------------------->
+  <div class="container-fluid bg-light destination">
+    <div class="container">
+      <h1>Trending Destination</h1>
+      <p>Most popular choices for travelers from India</p>
+    </div>
+
+    <div class="body-destination">
+      <section class="mn">
+        <div class="trendingdestination">
+          <div class="trendingdestination__img">
+            <img
+              src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+              alt="Big Ben">
+            <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>4.5</span>
+            <div class="trendingdestination__overlay">
+              <a href="">
+                <h2>London</h2>
+              </a>
+              <p>Big Ben</p>
+            </div>
           </div>
+        </div>
+        <div class="trendingdestination">
+          <div class="trendingdestination__img">
+            <img
+              src="https://images.unsplash.com/photo-1581010864468-c972b8705439?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="Eiffel Tower">
+            <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>5</span>
+            <div class="trendingdestination__overlay">
+              <a href="">
+                <h2>Paris</h2>
+              </a>
+              <p>Eiffel Tower</p>
+            </div>
+          </div>
+        </div>
+        <div class="trendingdestination">
+          <div class="trendingdestination__img">
+            <img
+              src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1096&q=80"
+              alt="Colosseum">
+            <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>4.7</span>
+            <div class="trendingdestination__overlay">
+              <a href="">
+                <h2>Rome</h2>
+              </a>
+              <p>Colosseum</p>
+            </div>
+          </div>
+        </div>
+        <div class="trendingdestination">
+          <div class="trendingdestination__img">
+            <img
+              src="https://images.unsplash.com/photo-1581473483413-313a5afffb08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80"
+              alt="Pisa Tower">
+            <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>4.3</span>
+            <div class="trendingdestination__overlay">
+              <a href="">
+                <h2>Pisa</h2>
+              </a>
+              <p>Pisa Tower</p>
+            </div>
+          </div>
+        </div>
+        <div class="trendingdestination">
+          <div class="trendingdestination__img">
+            <img
+              src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+              alt="">
+            <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>4.8</span>
+            <div class="trendingdestination__overlay">
+              <a href="">
+                <h2>New York</h2>
+              </a>
+              <p>Statue of Liberty</p>
+            </div>
+          </div>
+        </div>
+        <div class="trendingdestination">
+          <div class="trendingdestination__img">
+            <img
+              src="https://images.unsplash.com/photo-1527915676329-fd5ec8a12d4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+              alt="Sydney Opera House">
+            <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>5</span>
+            <div class="trendingdestination__overlay">
+              <a href="">
+                <h2>Sydney</h2>
+              </a>
+              <p>Sydney Opera House</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+  <!-- Explore India corosoul -->
+
+  <!-- Quick and easy trip planner multitab corosul -->
+
+  <!-- Get inspiration for your next trip blog -->
+
+  <!-- Stay at our top unique properties section -->
+
+  <!-- Homes guests love corosul -->
+
+  <!-- Get instant discounts section -->
+
+  <!-- Destinations we love section multi tab -->
+
+  <!-- our Partner -->
+  <div class="container-fluid bg-light partner">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p>
+        </div>
+        <div class="col-12">
+          <img class="me-5"
+            src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png"
+            alt="">
+          <img class="me-5"
+            src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png"
+            alt="">
+          <img class="me-5"
+            src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png"
+            alt="">
+          <img class="me-5"
+            src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png"
+            alt="">
+          <img class="me-5"
+            src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png"
+            alt="">
+        </div>
       </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="new_footer_area bg_color container-fluid">
+    <div class="new_footer_top ">
+      <section class="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Info</h4>
+            <ul class="links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Compressions</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Collection</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="links">
+              <li><a href="#">Free Designs</a></li>
+              <li><a href="#">Latest Designs</a></li>
+              <li><a href="#">Themes</a></li>
+              <li><a href="#">Popular Designs</a></li>
+              <li><a href="#">Art Skills</a></li>
+              <li><a href="#">New Uploads</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul class="links">
+              <li><a href="#">Customer Agreement</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">GDPR</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Media Kit</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe to our newsletter for a weekly dose
+              of news, updates, helpful tips, and
+              exclusive offers.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="footer_bg">
-          <div class="footer_bg_one"></div>
-          <div class="footer_bg_two"></div>
+        <div class="footer_bg_one"></div>
+        <div class="footer_bg_two"></div>
       </div>
-  </div>
-  <div class="footer_bottom">
-      <div class="container">
-          <div class="row align-items-center">
-              <div class="col-lg-6 col-sm-7">
-                  <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
-              </div>
-              <div class="col-lg-6 col-sm-5 text-right">
-                  <p>Made with <i class="icon_heart"></i> in <a href="http://cakecounter.com" target="_blank">CakeCounter</a></p>
-              </div>
-          </div>
+    </div>
+  </footer>
+  <div class="container-fulid bg-primary text-center footer_bottom ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <p class="m-2">© BOOKING.COM Inc.. 2024 All rights reserved.</p>
+        </div>
+        <div class="col-lg-6 col-lg-6 col-sm-12 align-items-center">
+          <p class="m-2">Made with in <a href="https://msprince-portfolio.netlify.app/" target="_parent">M S
+              Prince</a></p>
+        </div>
       </div>
+    </div>
   </div>
-</footer>
-<!-- our partner -->
-</div>
+  </div>
 
 
 
@@ -271,27 +427,27 @@
 
 
   <!-- date picker script link  -->
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 </body>
 <!-- ------------------------------------------animated loading-------------------------------- -->
 <script>
-  window.onload = function() {
+  window.onload = function () {
     // Show loader
     const loader = document.querySelector('.loader');
     loader.style.display = 'block';
 
     // Hide loader and show content after 15 seconds
     setTimeout(() => {
-        loader.style.display = 'none';
-        document.querySelector('.ms').classList.remove('hidden');
+      loader.style.display = 'none';
+      document.querySelector('.ms').classList.remove('hidden');
     }, 5000);
-};
+  };
 </script>
 <!-- date picker -->
 <script>
-  $(document).ready(function() {
+  $(document).ready(function () {
     $('#dateRangePicker').daterangepicker({
       "opens": "left",
       "locale": {
@@ -303,12 +459,12 @@
 <!-- -----------choose-person------------------------ -->
 <script>
   // Function to show the choose-container when the input is focused
-  document.getElementById('result').addEventListener('focus', function() {
+  document.getElementById('result').addEventListener('focus', function () {
     document.getElementById('choose-container').style.display = 'flex';
   });
 
   // Function to hide the choose-container when clicking anywhere on the window
-  window.addEventListener('click', function(event) {
+  window.addEventListener('click', function (event) {
     if (!event.target.closest('#choose-container') && !event.target.matches('#result')) {
       document.getElementById('choose-container').style.display = 'none';
     }
