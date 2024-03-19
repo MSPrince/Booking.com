@@ -21,8 +21,11 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/trendingDestination.css">
+  <link rel="stylesheet" href="./css/explore.css">
+  <link rel="stylesheet" href="./css/offer.css">
   <!-- date picker css link -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<!-- offer-------------------------------------- -->
 
 </head>
 
@@ -168,7 +171,16 @@
   </div>
 
   <!-- looking for flight -->
-
+  <div class="container-fluid bg-light py-3 looking-for-flight">
+    <div class="container">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label lft mx-3" for="flexCheckDefault">
+         I Am Looking For Flight
+        </label>
+      </div>
+    </div>
+  </div>
   <!-- offer corosoul -->
 
   <!-- Browse by property type -->
@@ -290,7 +302,86 @@
   </div>
 
   <!-- Explore India corosoul -->
-
+    <div class="container-fluid bg-light explore">
+      <div class="container">
+        <h2>
+          Explore India </h2>
+        <p class="ex"> These popular destinations have a lot to offer</p>
+    
+        <div class="explore-container">
+          <a href="#" class="explore_card">
+            <img
+              src="https://r-xx.bstatic.com/xdata/images/region/170x136/49646.jpg?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o="
+              alt="">
+            <h5>Goa</h5>
+            <p>5,260 properties</p>
+          </a>
+          <a href="#" class="explore_card">
+            <img
+              src="https://r-xx.bstatic.com/xdata/images/city/170x136/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o="
+              alt="">
+            <h5>New Delhi</h5>
+            <p>5,260 properties</p>
+          </a>
+          <a href="#" class="explore_card">
+            <img
+              src="https://r-xx.bstatic.com/xdata/images/city/170x136/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o="
+              alt="">
+            <h5>Mumbai</h5>
+            <p>5,260 properties</p>
+          </a>
+          <a href="#" class="explore_card">
+            <img
+              src="https://q-xx.bstatic.com/xdata/images/region/170x136/68606.jpg?k=4b43b9128b79beaab4ca2e8c038ddf5709b0b90608afbca222cfbe08fabda7d2&o="
+              alt="">
+            <h5>North Goa</h5>
+            <p>5,260 properties</p>
+          </a>
+          <a href="#" class="explore_card">
+            <img
+              src="https://r-xx.bstatic.com/xdata/images/city/170x136/684657.jpg?k=66dc5035b43e9bb86b756e381e4fec2558064af4a63a8af17836725a854c03ee&o="
+              alt="">
+            <h5>Jaipur</h5>
+            <p>5,260 properties</p>
+          </a>
+          <a href="#" class="explore_card">
+            <img
+              src="https://q-xx.bstatic.com/xdata/images/city/170x136/684657.jpg?k=66dc5035b43e9bb86b756e381e4fec2558064af4a63a8af17836725a854c03ee&o="
+              alt="">
+            <h5>Banglore</h5>
+            <p>5,260 properties</p>
+          </a>
+          <a href="#" class="explore_card">
+            <img
+              src="https://q-xx.bstatic.com/xdata/images/region/170x136/69967.jpg?k=2e683234884f1caa334734e2ee99dd2036f55c3c413f65702d965eca167619a4&o="
+              alt="">
+            <h5>South Goa</h5>
+            <p>5,260 properties</p>
+          </a>
+          <a href="#" class="explore_card">
+            <img
+              src="https://q-xx.bstatic.com/xdata/images/city/170x136/684880.jpg?k=e39b50ba8be4c6c6c413c963af6e0d452dbe0decaf72e13f9f798e65de549107&o="
+              alt="">
+            <h5>Rishikesh</h5>
+            <p>5,260 properties</p>
+          </a>
+          <a href="#" class="explore_card">
+            <img
+              src="https://r-xx.bstatic.com/xdata/images/city/170x136/684919.jpg?k=0a73fce29109503c055e288c413d9a1c5bd66fdb26f01c1438e8017b0b64b42f&o="
+              alt="">
+            <h5>Ooty</h5>
+            <p>5,260 properties</p>
+          </a>
+          <a href="#" class="explore_card">
+            <img
+              src="https://r-xx.bstatic.com/xdata/images/city/170x136/684769.jpg?k=146b18e42b9eb74078f2e80e07e573e8dbac879208b86bae451f99882f566a99&o="
+              alt="">
+            <h5>Pondicherry</h5>
+            <p>689 properties</p>
+          </a>
+        </div>
+      </div>
+    </div>
   <!-- Quick and easy trip planner multitab corosul -->
 
   <!-- Get inspiration for your next trip blog -->
@@ -431,6 +522,7 @@
   <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 </body>
+
 <!-- ------------------------------------------animated loading-------------------------------- -->
 <script>
   window.onload = function () {
@@ -491,5 +583,7 @@
     document.getElementById('result').value = `Adult: ${adult}, Children: ${children}, Rooms: ${rooms}`;
   }
 </script>
+
+
 
 </html>

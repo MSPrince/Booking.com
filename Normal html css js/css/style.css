@@ -419,7 +419,16 @@ button[type="submit"] {
 
 
   /* <!-- looking for flight --> */
-
+       .looking-for-flight .form-check-input[type="checkbox"] {
+            width: 20px;
+            /* Set desired width */
+            height: 20px;
+            /* Set desired height */
+            border: .5px solid blue;
+        }
+        .lft{
+            font-size: 16px;
+        }
   /* <!-- offer corosoul --> */
   /* <!-- Browse by property type --> */
 /* <!-- Trending destinations grid --> */
