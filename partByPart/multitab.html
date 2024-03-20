@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Tab Project</title>
+    <style>
+
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .tab.active {
+            background-color: #ddd;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            width: 100%;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <ul class="tabs">
+            <li class="tab active" onclick="openTab(event, 'tab1')">Tab 1</li>
+            <li class="tab" onclick="openTab(event, 'tab2')">Tab 2</li>
+            <li class="tab" onclick="openTab(event, 'tab3')">Tab 3</li>
+        </ul>
+        <div id="tab1" class="tab-content active">
+            <h2>Tab 1 Content</h2>
+            <div class="first-tab-content">
+                <div style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                            <td>Data 6</td>
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                            <td>Data 6</td>
+                        </tr>
+                        <tr>
+                            <td>Data 7</td>
+                            <td>Data 8</td>
+                            <td>Data 9</td>
+                            <td>Data 10</td>
+                            <td>Data 11</td>
+                            <td>Data 12</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="tab2" class="tab-content">
+            <h2>Tab 2 Content</h2>
+            <p>This is the content of tab 2.</p>
+        </div>
+        <div id="tab3" class="tab-content">
+            <h2>Tab 3 Content</h2>
+            <p>This is the content of tab 3.</p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+
+</body>
+
+</html>
